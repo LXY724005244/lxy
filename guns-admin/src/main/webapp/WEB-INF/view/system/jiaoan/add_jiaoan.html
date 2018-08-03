@@ -1,0 +1,41 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+<form id="jiaoan2">
+            <input type="hidden" id="id" value="">
+
+            <div class="row m-b">
+                <label class="col-sm-4 control-label"></label>
+                <span>标签之间用逗号分隔</span>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-12 ">
+
+                    <#input id="bq" name="标签" underline="true"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 ">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">教案描述</label>
+                    <div class="col-sm-9">
+                    <textarea id="introduction" name="jams" class="col-sm-9 form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="add_jiaoan.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="add_jiaoan.close()"/>
+                </div>
+            </div>
+</form>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/system/jiaoan/add_jiaoan.js"></script>
+@}

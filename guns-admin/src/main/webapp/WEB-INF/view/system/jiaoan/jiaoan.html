@@ -1,0 +1,62 @@
+@layout("/common/_container.html"){
+<link rel="stylesheet" href="/static/editor/css/editormd.css">
+<div class="ibox float-e-margins">
+    <div class="ibox-title">
+        <h5>新增教案</h5>
+    </div>
+    <div class="ibox-content">
+
+        <div class="row row-lg">
+            <form id="jiaoan1">
+                <input name="mdMaterial" id="id_input_md" type="hidden">
+                <input name="htmlMaterial" id="id_input_html" type="hidden">
+                <div class="col-sm-12" >
+                    <div class="row">
+                    </div>
+                    <div class="col-sm-6" >
+                        <div class="input-group input-group-lg" >
+                            <div class="input-group-btn" >
+                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle"
+                                        type="button">标题
+                                </button>
+                            </div>
+                            <input name="jiaoan_title" type="text" class="form-control" id="title" placeholder="教案标题" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-btn">
+                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle"
+                                        type="button">作者
+                                </button>
+                            </div>
+                            <input type="text" name="jiaoan_author" class="form-control" id="author" placeholder="作者" />
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-primary button-margin"  id="jiaoan_submit">
+                            <i class="fa fa-plus"></i>&nbsp;提交
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="col-sm-12">
+
+                <div id="test-editormd">
+                    <textarea style="display:none;" ></textarea>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="/static/modular/system/jiaoan/jiaoan.js"></script>
+<script src="/static/editor/editormd.min.js"></script>
+@}
