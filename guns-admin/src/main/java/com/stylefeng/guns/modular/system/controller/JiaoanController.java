@@ -63,4 +63,9 @@ public class JiaoanController  {
         modelAndView.addObject("Tag",list);
         return  modelAndView;
     }
+    @RequestMapping("/list")
+    @ResponseBody
+    public String JiaoanList(){
+
+    }
 }
